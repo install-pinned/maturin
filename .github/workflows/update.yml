@@ -1,0 +1,53 @@
+
+name: "update pins"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 4,16 * * *'
+
+jobs:
+  update_pins:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.7'
+      - uses: install-pinned/pip-tools@41f7e8a0605d3487afde2503a5b352b2126b0873  # 6.9.0
+      - run: pip-compile --allow-unsafe --generate-hashes pins/requirements.in -o pins/requirements-3.7.txt
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+      - uses: install-pinned/pip-tools@41f7e8a0605d3487afde2503a5b352b2126b0873  # 6.9.0
+      - run: pip-compile --allow-unsafe --generate-hashes pins/requirements.in -o pins/requirements-3.8.txt
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - uses: install-pinned/pip-tools@41f7e8a0605d3487afde2503a5b352b2126b0873  # 6.9.0
+      - run: pip-compile --allow-unsafe --generate-hashes pins/requirements.in -o pins/requirements-3.9.txt
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - uses: install-pinned/pip-tools@41f7e8a0605d3487afde2503a5b352b2126b0873  # 6.9.0
+      - run: pip-compile --allow-unsafe --generate-hashes pins/requirements.in -o pins/requirements-3.10.txt
+
+      - id: commit
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config --global user.name "install-pinned bot"
+            git config --global user.email "install-pinned@users.noreply.github.com"
+            git add --all
+            ver=$(curl -Ls https://pypi.org/pypi/maturin/json | jq -r .info.version)
+            git commit -m "update pins (maturin $ver)"
+            commit=$(git rev-parse HEAD)
+            sed -i -E "s/@[0-9a-f]{40}.*/@$commit  # $ver/g" README.md
+            git commit -am "update README.md (maturin $ver)"
+            git push
+          fi
