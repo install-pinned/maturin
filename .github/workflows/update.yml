@@ -38,6 +38,12 @@ jobs:
       - uses: install-pinned/pip-tools@41f7e8a0605d3487afde2503a5b352b2126b0873  # 6.9.0
       - run: pip-compile --allow-unsafe --generate-hashes pins/requirements.in -o pins/requirements-3.10.txt
 
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - uses: install-pinned/pip-tools@41f7e8a0605d3487afde2503a5b352b2126b0873  # 6.9.0
+      - run: pip-compile --allow-unsafe --generate-hashes pins/requirements.in -o pins/requirements-3.11.txt
+
       - id: commit
         run: |
           if [ -n "$(git status --porcelain)" ]; then
