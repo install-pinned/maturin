@@ -13,8 +13,8 @@ This action installs a pinned version of **maturin** and all its dependencies,  
 In your GitHub Actions workflow, use this action like so:
 
 ```yaml
-- name: Install maturin from PyPI
-  uses: install-pinned/maturin@2b8444a1f20de387c30a4a4f93ca44c723ba4acf  # 0.13.6
+      - name: Install maturin from PyPI
+        uses: install-pinned/maturin@2b8444a1f20de387c30a4a4f93ca44c723ba4acf  # 0.13.6
 ```
 
 ## Alternatives
