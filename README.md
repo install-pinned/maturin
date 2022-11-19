@@ -14,7 +14,7 @@ In your GitHub Actions workflow, use this action like so:
 
 ```yaml
       - name: Install maturin from PyPI
-        uses: install-pinned/maturin@8cc9b8f6140f5583206107825baeb6b9fb13a996  # 0.13.7
+        uses: install-pinned/maturin@e6de546cd38059edd1e7e3682c5772bc46429c00  # 0.14.0
 ```
 
 ## Alternatives
