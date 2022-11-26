@@ -16,6 +16,7 @@ maturin==0.14.2 \
     --hash=sha256:c65b00f4a4773bc56ca690d93abd09c85cc59b161a313fba3d03aca1ffbba7ca \
     --hash=sha256:daefa75e3f03e914924cb5913b40ada47ff646562c3b1874ddaf5b1e4b0f41ef \
     --hash=sha256:e0b808d1a0b78532c1bcbeb2d01d90281585dc460a966f1949fd337a3fb614c0 \
+    --hash=sha256:ebc722e9661a40c3d36a06ecc0d1c637ae1af3335ea0ab69230f46a71e344088 \
     --hash=sha256:fa01eeacfd1798cde3ba1c7a0b8d7a889d2ed0e207f4860beb819c5ddd351f43
     # via -r pins/requirements.in
 tomli==2.0.1 \
