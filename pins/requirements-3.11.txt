@@ -4,18 +4,18 @@
 #
 #    pip-compile --allow-unsafe --generate-hashes --output-file=pins/requirements-3.11.txt pins/requirements.in
 #
-maturin==0.14.3 \
-    --hash=sha256:0fb93f66a4f4a73625ef3bc6adcca926ee4046af2ce4b813e8506aaef421e54b \
-    --hash=sha256:18fa02bef6eda87e560184a6e3dcea43df5ab221b9af3efbd8d4c55047e68663 \
-    --hash=sha256:1fc0224f3bd200d5c69df1dcd45bb4a71f2bb882f6d45c7df14ad3a102acf328 \
-    --hash=sha256:43a7a212b4d2a6bd8918a7160b3747f49732e18fab7c7abe8cc1f96152c640a0 \
-    --hash=sha256:5d56bfb0644a51de59cb5cf99a0ae7e83a438994bc75b9e876adf452f75352aa \
-    --hash=sha256:62a8c758e516d2d381c536eddf3c88fc74043e08bf0686520dd458b5bf4e1ea0 \
-    --hash=sha256:633fbe4bb27a88ca73a6c76c308acf00e2fdacbd3afd8a312d76467b8cacd717 \
-    --hash=sha256:835547396a46c5fb2a9b70149ca1fe6ca63f63b676bdc47b2aa2363bc14e384c \
-    --hash=sha256:8a063bc9282d82d9434ad184b84902a2ad05ecf6dae6be36b0b45fe291ac4be0 \
-    --hash=sha256:96351bdf4122722eec386ce83f0c1285d81e216198eef02a0d030e722b8fba5a \
-    --hash=sha256:a0c979a7a2385b63952ddcb15cab4658b76807c2bc3c9739deea93529ebc176c \
-    --hash=sha256:e55e6ceeed561d8430a08b75d1e2dbb9a0bde9e56df1e42d26c9d91d74714452 \
-    --hash=sha256:f6caada4a5c4cc76a6d7bca13c70e2ebf0dc2190b0d18ccb3b81deb8056d61aa
+maturin==0.14.4 \
+    --hash=sha256:0a0fec756c119fc4add8efed1e026e56892542dcad344383de7db1dae5d80373 \
+    --hash=sha256:0b01d6457f9a2eb3c5f8c45858996445cc2428caf62ca2d60d7e0fa0e0c096ce \
+    --hash=sha256:4865bce1fdf6d11db15a933e8dad585b55b649ec5fd1d375affb2bf65a48ebba \
+    --hash=sha256:4c4a2d0c6fe4cfd79709a2cf8e8ec38deee6058bf2258bfa7fd183ae4291c95d \
+    --hash=sha256:4f881de93bf68b313d9020ff731c2a075a847b43492d2f10151b0a6f5f4ee8af \
+    --hash=sha256:50e4e34b7d1f9b06eebccee1d6fdf53f90cca1511d69b3c0cd16ad156cd2021c \
+    --hash=sha256:a84d8b14e276c3f762333723cf11e1f35733e61fc4fe018161524d0305c8f5e8 \
+    --hash=sha256:aee59d35a5ae58fddafc68f93b4c41950db3a2d7b67199693edc037defa990fd \
+    --hash=sha256:af39527f107984c0588cea36a6c0e27c98d482e7066f138f11921a0e478c90cd \
+    --hash=sha256:af450b1785c31d4d8ac6d3d0072f87a13ea5d77e71b35f4268bc67f30f46da5a \
+    --hash=sha256:c83f23ce52c11591ff6d28c9fc6396eb83dd99fbf38376053e55637565075719 \
+    --hash=sha256:dbbcb56b2e38a03b76b5c8923bd25421fa2cc4512eb676613cb20e4941115945 \
+    --hash=sha256:e6a64d50c9c927b55e6287815afe08ede8ee25230a932735d04b7489f55cbb28
     # via -r pins/requirements.in
