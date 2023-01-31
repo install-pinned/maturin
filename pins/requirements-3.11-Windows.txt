@@ -4,18 +4,18 @@
 #
 #    pip-compile --allow-unsafe --generate-hashes --output-file=new-pins/requirements-3.11-Windows.txt pins/requirements.in
 #
-maturin==0.14.10 \
-    --hash=sha256:11b8550ceba5b81465a18d06f0d3a4cfc1cd6cbf68eda117c253bbf3324b1264 \
-    --hash=sha256:2f097a63f3bed20a7da56fc7ce4d44ef8376ee9870604da16b685f2d02c87c79 \
-    --hash=sha256:4946ad7545ba5fc0ad08bc98bc8e9f6ffabb6ded71db9ed282ad4596b998d42a \
-    --hash=sha256:5abf311d4618b673efa30cacdac5ae2d462e49da58db9a5bf0d8bde16d9c16be \
-    --hash=sha256:6cc9afb89f28bd591b62f8f3c29736c81c322cffe88f9ab8eb1749377bbc3521 \
-    --hash=sha256:895c48cbe56ae994c2a1eeeef19475ca4819aa4c6412af727a63a772e8ef2d87 \
-    --hash=sha256:98bfed21c3498857b3381efeb041d77e004a93b22261bf9690fe2b9fbb4c210f \
-    --hash=sha256:9da98bee0a548ecaaa924cc8cb94e49075d5e71511c62a1633a6962c7831a29b \
-    --hash=sha256:b157e2e8a0216d02df1d0451201fcb977baf0dcd223890abfbfbfd01e0b44630 \
-    --hash=sha256:c0d25e82cb6e5de9f1c028fcf069784be4165b083e79412371edce05010b68f3 \
-    --hash=sha256:cf950ebfe449a97617b91d75e09766509e21a389ce3f7b6ef15130ad8a95430a \
-    --hash=sha256:e9c19dc0a28109280f7d091ca7b78e25f3fc340fcfac92801829a21198fa20eb \
-    --hash=sha256:ec8269c02cc435893308dfd50f57f14fb1be3554e4e61c5bf49b97363b289775
+maturin==0.14.11 \
+    --hash=sha256:00fd302bab809ec8216425bdb5afcef93a0e3abc88a9fd7b73f90cdefd37d048 \
+    --hash=sha256:0d3a7e7e48cf019ff8de2f555a55d915d6ddb920a1afd7ef15442e365281cf70 \
+    --hash=sha256:0f2dad947dee8c462eff3863637715306a9ab43d0317a4b6a23f51ad367475a5 \
+    --hash=sha256:8d367a7ab16b124d9a03591966776e421ca4c197db2cf5987b7641ae4f5f47c3 \
+    --hash=sha256:8ecff1b3b85f949efc35436aacf276641ac6e28c81ccffb00c7069c92c4a6a67 \
+    --hash=sha256:a877f3b973427d46222848421cad7b7bc603eb8fa90de36b2b74b8fd2d5eab87 \
+    --hash=sha256:abd71c30fe3a5ac28f8b42c21743c8f7b4968d05de0ed8a3c4b2d9eedbf8ed50 \
+    --hash=sha256:b3c54a4c1d1452ee52f1fe2de8435f7df1ab1712705f7e1395aaf3f1388ae52e \
+    --hash=sha256:bd044f1719dad6f1b830ce254191fb841a4ddfed2b8a07be866c3095f792f03c \
+    --hash=sha256:c57490dfd1bc7d695808dd16129035a565b4cc75a18c9ee014f0738c991f3f5f \
+    --hash=sha256:d02860f545855c66e4603c2ceb244372819ae8cb337a3200cf2990b334bfd1fa \
+    --hash=sha256:e9041a87ff03c3843ff8667ccb2a88a830a710b37470b8a763172ce3e9503e4f \
+    --hash=sha256:ffd31abf32b7612cef6294144c3169d0534b6c4036903f31af4b88d2fae1cad8
     # via -r pins/requirements.in
