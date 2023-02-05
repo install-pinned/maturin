@@ -1,4 +1,4 @@
-maturin==0.14.12 ; python_version >= "3.7" \
+maturin==0.14.12 ; python_version >= "3.7" and python_version < "4.0" \
     --hash=sha256:16a81196ada94bc4b6ee1df6a4fa2e2dd3a2b51c9dd41e3561f59f796fdad92f \
     --hash=sha256:3f555fb042b94f74995e6733a6406fb5afd6604828608968aebd4aa191180a2d \
     --hash=sha256:5989a92903e86a37428b4ebf1df44b08023e8efb695fb549f9dab0ac9cc5bae3 \
@@ -12,6 +12,6 @@ maturin==0.14.12 ; python_version >= "3.7" \
     --hash=sha256:e5c5192ec8ebb9f8e4e5f26d2f02171fcfab3f666b66292fe0680980c13706b3 \
     --hash=sha256:fcc75fa7bf98326ef9b3e648b9107be6afdbb0cac4dd861f0040ad6a3d410a69 \
     --hash=sha256:fd4ac0c5591f30732a3ddab13f9d2a6f32d0fe4424e3f0c3612356ad95acb5e5
-tomli==2.0.1 ; python_version < "3.11" and python_version >= "3.7" \
+tomli==2.0.1 ; python_version >= "3.7" and python_version < "3.11" \
     --hash=sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc \
     --hash=sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f
